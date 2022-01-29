@@ -34,11 +34,13 @@ export const Navbar = () => {
                 <li><Link href="/"><BsLinkedin /></Link></li>
                 <li><Link href="/"><SiGmail /></Link></li>
             </ul>
-            <div className={`navegacion-links ${open === true && "animation-write"}`}>
-                <Link href="/"><a>Inicio</a></Link>
-                <Link href="/"><a>Sobre mí</a></Link>
-                <Link href="/"><a>Trabajos</a></Link>
-            </div>
+            {open === true &&
+                <div className={`navegacion-links ${open === true && "animation-write"}`}>
+                    <Link href="/"><a onClick={() => setOpen(!open)}>Inicio</a></Link>
+                    <Link href="/contact"><a onClick={() => setOpen(!open)}>Sobre mí</a></Link>
+                    <Link href="/"><a onClick={() => setOpen(!open)}>Trabajos</a></Link>
+                </div>
+            }
         </div>
         </>
     )
