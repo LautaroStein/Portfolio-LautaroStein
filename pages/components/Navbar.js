@@ -5,7 +5,7 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs"
 import { SiGmail } from "react-icons/si"
 
 
-export const Navbar = () => {
+export const Navbar = ({setLoader, setCloseMenu, closeMenu}) => {
 
     const [open, setOpen] = useState(false)
 
@@ -15,7 +15,7 @@ export const Navbar = () => {
             <div className="contenedor-boton-nav">
                 <Image src="/Logo.svg" alt="Picture of the author" width={100} height={100} />
                 <div>
-                    <button onClick={() => setOpen(!open)}>
+                    <button onClick={() => {setOpen(!open); setCloseMenu(!closeMenu)}}>
                         <span className={`${open === true && "nav-open"}`}>CERRAR</span>
                         <span className={`${open === false && "nav-close"}`}>MENU</span>
                     </button>
@@ -36,9 +36,9 @@ export const Navbar = () => {
             </ul>
             {open === true &&
                 <div className={`navegacion-links ${open === true && "animation-write"}`}>
-                    <Link href="/"><a onClick={() => setOpen(!open)}>Inicio</a></Link>
-                    <Link href="/contact"><a onClick={() => setOpen(!open)}>Sobre mí</a></Link>
-                    <Link href="/"><a onClick={() => setOpen(!open)}>Trabajos</a></Link>
+                    <Link href="/"><a onClick={() => {setOpen(!open); setLoader(false); setCloseMenu(!closeMenu)}}>Inicio</a></Link>
+                    <Link href="/contact"><a onClick={() => {setOpen(!open); setLoader(false); setCloseMenu(!closeMenu)}}>Sobre mí</a></Link>
+                    <Link href="/"><a onClick={() => {setOpen(!open); setLoader(false); setCloseMenu(!closeMenu)}}>Trabajos</a></Link>
                 </div>
             }
         </div>
