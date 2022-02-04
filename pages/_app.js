@@ -15,13 +15,13 @@ function MyApp({ Component, pageProps }) {
   <>
   <main className='main-total'>
     <div className={`loader-real ${loader && "loader-off"}`}>
-      <div class={`wrapper ${loader && "loader-off-spans"}`}>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="shadow"></div>
-          <div class="shadow"></div>
-          <div class="shadow"></div>
+      <div className={`wrapper ${loader && "loader-off-spans"}`}>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="shadow"></div>
+          <div className="shadow"></div>
+          <div className="shadow"></div>
           <span>Loading</span>
       </div>
     </div>
@@ -29,9 +29,12 @@ function MyApp({ Component, pageProps }) {
       loader &&
       <>
         <Navbar setLoader={setLoader} setCloseMenu={setCloseMenu} closeMenu={closeMenu}/>
-        {closeMenu && <Component {...pageProps} />}
+        {closeMenu && <Component {...pageProps} setLoader={setLoader}/>}
       </>
     }
+    <small className="made-in-lautaro">
+      © Lautaro Stein. 2022
+    </small>
   </main>
   </>
   )

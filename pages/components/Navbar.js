@@ -21,8 +21,9 @@ export const Navbar = ({setLoader, setCloseMenu, closeMenu}) => {
                     </button>
                 </div>
             </div>
-            <div>
-                <p>CONTACTAME</p>
+            <div className="contac">
+                <Image src="/mesage.svg" alt="Picture of the author" width={40} height={40} />
+                <span className="contactame">CONTACTAME</span>
             </div>
         </nav>
         <div className={`contenedor-navegacion-dos ${open === true && "nav-open-dos"}`}>
@@ -38,7 +39,7 @@ export const Navbar = ({setLoader, setCloseMenu, closeMenu}) => {
                 <div className={`navegacion-links ${open === true && "animation-write"}`}>
                     <Link href="/"><a onClick={() => {setOpen(!open); setLoader(false); setCloseMenu(!closeMenu)}}>Inicio</a></Link>
                     <Link href="/contact"><a onClick={() => {setOpen(!open); setLoader(false); setCloseMenu(!closeMenu)}}>Sobre mí</a></Link>
-                    <Link href="/"><a onClick={() => {setOpen(!open); setLoader(false); setCloseMenu(!closeMenu)}}>Trabajos</a></Link>
+                    <Link href="/trabajos"><a onClick={() => {setOpen(!open); setLoader(false); setCloseMenu(!closeMenu)}}>Trabajos</a></Link>
                 </div>
             }
         </div>
