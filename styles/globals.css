@@ -1089,3 +1089,65 @@ small{
   background-image: none;
   background-color:#87dce7 ;
 }
+.texto-contexto-pagina .trabajos-h1{
+  margin-bottom: 50px;
+}
+.texto-contexto-pagina .trabajos-h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -23px;
+  height: 3px;
+  width: 80px;
+  background: #F67796;
+  transform-origin: left center;
+  animation: lineInTrabajos .50s cubic-bezier(.45,.85,.35,.85) .3s both;
+}
+@keyframes lineInTrabajos {
+  from{
+    transform: translateX(800px);
+    width: 150px;
+  }
+  to{
+    opacity: 1;
+    width: 80px;
+  }
+}
+.mytinerary-work{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 0.7px solid #9395B4;
+}
+.mytinerary-work img{
+  position: absolute;
+  left: 100px;
+  animation: animationImageYo 1.75s cubic-bezier(.215,.61,.355,1) backwards;
+}
+.mytinerary-work img:nth-child(2){
+  animation: 2.5s animation-stack infinite;
+}
+.mytinerary-work div{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mytinerary-work div h2{
+  font-size: 3em;
+  font-weight: 700;
+  animation: animationTexto 1s cubic-bezier(.45,.85,.35,.85) both;
+}
+.mytinerary-work div p{
+  font-family: var(--font-family-two);
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  line-height: 1.65;
+  margin-top: 20px;
+  animation: animationTexto 1s cubic-bezier(.45,.85,.35,.85) 0.5s both;
+}

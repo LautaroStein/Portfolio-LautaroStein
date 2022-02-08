@@ -82,7 +82,7 @@ export default function Home(props) {
             ejesY.divY &&
             <>
               <h2>Trabajemos Juntos.</h2>
-              <p>Soy un desarrollador web con una fuerte énfasis en la "Mejora progresiva", <b>busco formas creativas de ampliar los límites del código</b> front-end del sitio web sin comprometer el soporte y el rendimiento del navegador. Siendo el front-end mi lugar preferido estoy capacitado para trabajar desde el lado back-end con lo mas actualiazado de node.js</p>
+              <p>Soy un desarrollador web con una fuerte énfasis en la "Mejora progresiva", <b>busco formas creativas de ampliar los límites del código</b> front-end del sitio web sin comprometer el soporte y el rendimiento del navegador. Siendo el front-end mi lugar preferido estoy capacitado para trabajar desde el lado back-end con lo más actualizado de node.js</p>
               <Link href="/trabajos">
                 <a onClick={() => {props.setLoader(false)}}>
                   <span>Mis Trabajos</span>
@@ -100,8 +100,8 @@ export default function Home(props) {
               <img src="/stack-1.png" width={500} height={500}/>
               <div>
                 <h2>Mi stack es <b>MERN</b></h2>
-                <p>Más allá del desarrollo front-end, <b>soy especialista en <a target="_blank" href="https://www.mongodb.com/mern-stack">MERN</a></b> (Node.js, React.js, Express.js, MongoDB). me complace ayudar a planificar, crear y entregar un proyecto MERN que sea rápido, seguro y confiable.</p>
-                <p>Si el stack MERN no te convence, <b>estoy actualmente estudiando Phyton + base de datos MySql</b> para expandirme mas alla en el back-end.</p>
+                <p>Más allá del desarrollo front-end, <b>soy especialista en <a target="_blank" href="https://www.mongodb.com/mern-stack">MERN</a></b> (Node.js, React.js, Express.js, MongoDB). Me complace ayudar a planificar, crear y entregar un proyecto MERN que sea rápido, seguro y confiable.</p>
+                <p>Si el stack MERN no te convence, <b>estoy actualmente estudiando Phyton + base de datos MySql</b> para expandirme más allá en el back-end.</p>
               </div>
             </>
           }
@@ -113,7 +113,7 @@ export default function Home(props) {
               <img src="/Design-1.png" width={500} height={500}/>
               <div>
                 <h2>Diseños <b>Modernos y Detallados</b></h2>
-                <p>Busco los pequeños detalles que dan vida a un diseño. Con una excelente interaccion en la <b>interfaz de usuario</b>, un buen diseño de interacción fundamenta una interfaz con un <b>sentido de espacio y lógica</b>.</p>
+                <p>Busco los pequeños detalles que dan vida a un diseño. Con una excelente interacción en la <b>interfaz de usuario</b>, un buen diseño de interacción fundamenta una interfaz con un <b>sentido de espacio y lógica</b>.</p>
                 <p>Combino el <b>tiempo y el movimiento</b> matizados con un profundo conocimiento de la representación del navegador para ofrecer interacciones lógicas.</p>
               </div>
             </>
@@ -126,7 +126,7 @@ export default function Home(props) {
               <div>
                 <h2>¿Que esperas para contactarme?</h2>
                 <p>Creo firmemente que los diseñadores y desarrolladores tienen la responsabilidad de asegurarse de que lo que estamos construyendo no haga daño y trato de ser lo más ético posible al asumir proyectos.</p>
-                <p>Dicho todo esto, si está buscando una persona para trabajar con muchas ganas de crecer en el mundo laboral y de seguir aprendiendo tecnologias nuevas, entonces encontraste a la persona indicada tengamos una charla o reunion para acordar una propuesta, te dejo mi hoja de vida con todos mis datos de contacto.</p>
+                <p>Dicho todo esto, si está buscando una persona para trabajar con muchas ganas de crecer en el mundo laboral y de seguir aprendiendo tecnologías nuevas, entonces encontraste a la persona indicada tengamos una charla o reunión para acordar una propuesta, te dejo mi hoja de vida con todos mis datos de contacto.</p>
                   <a download="LautaroStein" href='/LautaroStein.pdf'>
                     <span>Hoja de vida</span>
                     {mouse &&<span style={{transform: `translatex(${mouse.x * 5}px) translateY(${mouse.y * 2}px)`, transition: "all 1s"}}></span>}
