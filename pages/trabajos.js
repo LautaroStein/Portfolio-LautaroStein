@@ -71,6 +71,16 @@ const trabajos = (props) => {
                 <h2><b>MyTinerary.</b></h2>
                 <p>Más allá del desarrollo front-end, <b>soy especialista en</b> (Node.js, React.js, Express.js, MongoDB). me complace ayudar a planificar, crear y entregar un proyecto MERN que sea rápido, seguro y confiable.</p>
                 <p>Si el stack MERN no te convence, <b>estoy actualmente estudiando Phyton + base de datos MySql</b> para expandirme mas alla en el back-end.</p>
+                <div>
+                  <a target="_blank" href='https://mytinerary-stein.netlify.app/'>
+                    <span>Demo</span>
+                    {mouse &&<span style={{transform: `translatex(${mouse.x * 5}px) translateY(${mouse.y * 2}px)`, transition: "all 1s"}}></span>}
+                  </a>
+                  <a target="_blank" href='https://github.com/LautaroStein/Mytinerary-LautaroStein.'>
+                    <span>GitHub</span>
+                    {mouse &&<span style={{transform: `translatex(${mouse.x * 5}px) translateY(${mouse.y * 2}px)`, transition: "all 1s"}}></span>}
+                  </a>
+                </div>
               </div>
             </>
           }
