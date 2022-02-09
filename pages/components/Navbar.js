@@ -22,7 +22,7 @@ export const Navbar = ({setLoader, setCloseMenu, closeMenu, asPath}) => {
                 </div>
             </div>
             <div className="contac">
-                <Image src="/mesage.svg" alt="Picture of the author" width={40} height={40} />
+                <Image src={`/${asPath === "/" ? "mesage.svg" : asPath === "/trabajos" ? "mesage-1.svg" : "mesagee.svg"}`} alt="Picture of the author" width={40} height={40} />
                 <span className="contactame">CONTACTAME</span>
             </div>
         </nav>

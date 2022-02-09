@@ -11,7 +11,7 @@ export default function Home(props) {
   const stackRef = useRef()
   const designRef = useRef()
   const esperasRef = useRef()
-
+  
   useEffect(()=>{
     const handleScroll = () => {
       const div = divRef.current;
